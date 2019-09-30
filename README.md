@@ -116,4 +116,4 @@ dubbo:
 
 [http://localhost:10087/consumer/hello/o(∩_∩)o](http://localhost:10087/consumer/hello/o(∩_∩)o)
 
-浏览器页面显示`你好,o(∩_∩)o哈哈`
+浏览器页面显示`你好,o(∩_∩)o`
