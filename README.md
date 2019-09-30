@@ -116,9 +116,6 @@ dubbo:
 
 然后启动服务消费者 `DubboSpringBootConsumerApplication`
 
-<<<<<<< HEAD
 浏览器访问消费者测试 [http://localhost:10087/consumer/hello/o(∩_∩)o](http://localhost:10087/consumer/hello/o(∩_∩)o)
 
-=======
->>>>>>> a2d9755626197af4e93d0364d792040d6621de47
 浏览器页面显示`你好,o(∩_∩)o`
