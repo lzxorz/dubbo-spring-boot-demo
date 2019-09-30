@@ -112,8 +112,10 @@ dubbo:
     address: nacos://localhost:8848
 ```
 
-访问消费者测试
+先启动服务提供者 `DubboSpringBootProviderApplication`
 
-[http://localhost:10087/consumer/hello/o(∩_∩)o](http://localhost:10087/consumer/hello/o(∩_∩)o)
+然后启动服务消费者 `DubboSpringBootConsumerApplication`
 
-浏览器页面显示`你好,o(∩_∩)o哈哈`
+浏览器访问消费者测试 [http://localhost:10087/consumer/hello/o(∩_∩)o](http://localhost:10087/consumer/hello/o(∩_∩)o)
+
+浏览器页面显示`你好,o(∩_∩)o`
