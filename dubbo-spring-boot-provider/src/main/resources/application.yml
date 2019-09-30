@@ -1,0 +1,31 @@
+server:
+  port: 10086
+# Spring boot application
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+# nacos配置中心
+nacos:
+  config:
+    server-addr: localhost:8848
+
+# Base packages to scan Dubbo Component: @org.apache.dubbo.config.annotation.Service
+## Dubbo 服务提供者配置
+dubbo:
+  # Dubbo应用 注册到注册中心的名称，的默认值是$ {spring.application.name}
+  application:
+    name: provider
+  scan:
+    # Dubbo组件扫描的基础包
+    base-packages: org.lzx.service
+  # Dubbo 协议与端口
+  protocol:
+    name: dubbo
+    port: 20880
+  ## Dubbo Registry
+  registry:
+    # 注册中心地址
+    #address: zookeeper://localhost:2181 #zookeeper
+    address: nacos://localhost:8848
+

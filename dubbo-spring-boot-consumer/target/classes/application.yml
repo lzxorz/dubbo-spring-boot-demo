@@ -1,0 +1,20 @@
+server:
+  port: 10087
+  servlet:
+    context-path: /consumer
+
+# Spring boot application
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
+#dubbo 消费者配置
+dubbo:
+  # Dubbo应用 注册到注册中心的名称，的默认值是$ {spring.application.name}
+  application:
+    name: consumer
+  registry:
+    # 注册中心地址
+    #address: zookeeper://localhost:2181 #zookeeper
+    address: nacos://localhost:8848
